@@ -13,10 +13,14 @@ jobs:
   update-properties:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout Code
         id: checkout_code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: "0"
           ref: ${{ github.ref_name }}
+
+      - uses: andrewb1269hg/update-custom-props@main
+        with:
+          governance-repo-url: 'https://github.com/PandasWhoCode/my-governance-repo.git'
+          token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
