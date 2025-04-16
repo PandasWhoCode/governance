@@ -3,7 +3,6 @@ repositories:
   - name: my-example-repo
     last-update-by: "example-team"
     last-date-modified: "2025-04-03"
-    property-does-not-exist: "test-field"
   - name: other-example-repo
     last-update-by: "other-team"
     last-date-modified: "2025-04-15"
