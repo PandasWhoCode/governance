@@ -20,6 +20,7 @@ jobs:
           fetch-depth: "0"
           ref: ${{ github.ref_name }}
 
-      - uses: PandasWhoCode/update-custom-properties@main
+      - name: Update Custom Properties
+        uses: PandasWhoCode/update-custom-properties@7-create-a-new-action-to-update-custom-properties
         with:
           token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
