@@ -1,6 +1,6 @@
 name: Update All Repos in Org Custom Properties
 
-description: Updates the repo custom properties as defined in the provided governance repo, repo-properties.yaml file.
+description: Update all repos custom properties in an org based on repo-properties.yaml file.
 
 on:
   workflow_dispatch:
