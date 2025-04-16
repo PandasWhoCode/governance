@@ -1,4 +1,4 @@
-name: Read all custom properties for all repos in an organization
+name: Read All Custom Properties
 
 description: Read all custom properties for all repos in an organization
 
@@ -19,3 +19,8 @@ jobs:
         with:
           fetch-depth: "0"
           ref: ${{ github.ref_name }}
+
+      - name: Read All Custom Properties
+        uses: PandasWhoCode/read-all-custom-properties@main
+        with:
+          token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
