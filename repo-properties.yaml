@@ -1,9 +1,16 @@
 org: PandasWhoCode
+teams:
+  - lf-staff
+  - github-maintainers
+  - release-engineering
+  - security
+  - tsc
 repositories:
   - name: my-example-repo
-    last-update-by: "example-team"
-    last-date-modified: "2024-05-03"
-    last-modified-team: "Owners"
-  - name: other-example-repo
-    last-update-by: "other-team"
-    last-date-modified: "2025-04-15"
+    last-date-modified: ""
+    initial-ci-review-by-team: "github-maintainers"
+    initial-ci-review-date: "2025-04-07"
+    initial-security-review-by-team: ""
+    initial-security-review-date: ""
+    last-security-review-by-team: ""
+    last-security-review-date: ""
