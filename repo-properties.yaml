@@ -2,7 +2,7 @@ org: PandasWhoCode
 repositories:
   - name: my-example-repo
     last-update-by: "example-team"
-    last-date-modified: "2025-04-03"
+    last-date-modified: "202-05-03"
     last-modified-team: "Owners"
   - name: other-example-repo
     last-update-by: "other-team"
