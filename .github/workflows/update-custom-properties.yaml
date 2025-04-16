@@ -20,6 +20,6 @@ jobs:
           fetch-depth: "0"
           ref: ${{ github.ref_name }}
 
-      - uses: andrewb1269hg/update-custom-props@main
+      - uses: PandasWhoCode/update-custom-props@main
         with:
           token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
