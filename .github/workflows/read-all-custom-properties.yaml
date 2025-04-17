@@ -1,4 +1,4 @@
-name: Read all custom properties for all repos in an organization
+name: Read All Custom Properties
 
 description: Read all custom properties for all repos in an organization
 
@@ -10,7 +10,7 @@ defaults:
     shell: bash
 
 jobs:
-  update-properties:
+  read-all-properties:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
@@ -19,3 +19,10 @@ jobs:
         with:
           fetch-depth: "0"
           ref: ${{ github.ref_name }}
+
+      - name: Read All Custom Properties
+        uses: PandasWhoCode/read-all-custom-properties@1-create-an-action-to-read-all-custom-properties
+        with:
+          token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
+          template: repo-properties-template.json
+          overwrite-existing-file: true
