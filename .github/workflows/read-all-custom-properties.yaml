@@ -25,3 +25,4 @@ jobs:
         with:
           token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
           template: repo-properties-template.json
+          overwrite-existing-file: true
