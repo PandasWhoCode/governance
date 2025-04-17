@@ -10,7 +10,7 @@ defaults:
     shell: bash
 
 jobs:
-  update-properties:
+  read-all-properties:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
