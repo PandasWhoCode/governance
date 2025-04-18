@@ -1,6 +1,8 @@
 name: Configure Organization Custom Properties
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *" # Every day at 0800 UTC
 
 defaults:
   run:
