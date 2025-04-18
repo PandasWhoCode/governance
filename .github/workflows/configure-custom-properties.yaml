@@ -31,4 +31,4 @@ jobs:
         uses: PandasWhoCode/configure-custom-properties@6e40078d7ba5e357ecdd240a3533625395d3e0ba # v1.0.0
         with:
           token: ${{ secrets.GH_CUSTOM_PROPS_TOKEN }}
-          config-file: ${{ github.workspace }}/properties/custom_props.json
+          config-file: ${{ github.workspace }}/properties_schema.json
