@@ -26,6 +26,26 @@ jobs:
           fetch-depth: "0"
           ref: ${{ github.ref_name }}
 
+      - name: Verify setup
+        env:
+          GH_TOKEN: ${{ secrets.GH_CUSTOM_PROPS_TOKEN }}
+          FILE_NAME: ${ github.workspace }/properties_schema.json
+        run: |
+          if [[ -z "${GH_TOKEN}" ]]; then
+            echo "Error: GH_TOKEN is not set."
+            exit 1
+          else
+            echo "GH_TOKEN is set."
+            echo "Token length is ${#GH_TOKEN}"
+          fi
+          
+          if [[ ! -f "${FILE_NAME}" ]]; then
+              echo "Error: Custom properties file '${FILE_NAME}' does not exist."
+              exit 1
+          else
+              echo "Custom properties file '${FILE_NAME}' exists."
+          fi
+
       - name: Set Organization Custom Properties
         id: set_custom_properties
         uses: PandasWhoCode/configure-custom-properties@3-update-initial-action
