@@ -8,7 +8,6 @@ defaults:
 
 permissions:
   contents: write
-  organization: write
   id-token: write
 
 jobs:
