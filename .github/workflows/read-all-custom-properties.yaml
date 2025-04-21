@@ -4,19 +4,18 @@ description: Read all custom properties for all repos in an organization
 
 on:
   workflow_dispatch:
-
-inputs:
-  template:
-    description: 'Template for Custom Property Fields'
-    required: false
-  overwrite-existing-file:
-    description: 'Overwrite existing repo-properties.yaml with read values'
-    default: false
-    required: false
-  commit-changes:
-    description: 'Commit values read to the repo'
-    default: false
-    required: false
+    inputs:
+      template:
+        description: 'Template for Custom Property Fields'
+        required: false
+      overwrite-existing-file:
+        description: 'Overwrite existing repo-properties.yaml with read values'
+        default: false
+        required: false
+      commit-changes:
+        description: 'Commit values read to the repo'
+        default: false
+        required: false
 
 defaults:
   run:
