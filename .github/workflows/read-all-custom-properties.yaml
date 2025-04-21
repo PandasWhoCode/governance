@@ -7,6 +7,7 @@ on:
     inputs:
       template:
         description: 'Template for Custom Property Fields'
+        default: "repo-properties-template.json"
         required: false
       overwrite-existing-file:
         description: 'Overwrite existing repo-properties.yaml with read values'
