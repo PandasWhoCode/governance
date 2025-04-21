@@ -6,12 +6,12 @@ on:
   workflow_dispatch:
     inputs:
       template:
-        description: 'Template for Custom Property Fields'
-        default: "repo-properties-template.json"
+        description: 'Template for Custom Property Fields:'
+        default: 'repo-properties-template.json'
         required: false
       overwrite-existing-file:
         description: 'Overwrite existing repo-properties.yaml with read values'
-        default: false
+        default: true
         type: boolean
         required: false
       commit-changes:
