@@ -11,10 +11,12 @@ on:
       overwrite-existing-file:
         description: 'Overwrite existing repo-properties.yaml with read values'
         default: false
+        type: boolean
         required: false
       commit-changes:
         description: 'Commit values read to the repo'
         default: false
+        type: boolean
         required: false
 
 defaults:
