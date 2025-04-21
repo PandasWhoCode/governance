@@ -19,6 +19,15 @@ on:
         default: false
         type: boolean
         required: false
+      commit-author-name:
+        description: 'Author of commit name:'
+        required: true
+        default: "pandas-who-code-sa"
+      commit-author-email:
+        description: 'Author of commit email address:'
+        required: true
+        default: "github-sa@pandaswhocode.com"
+
 
 defaults:
   run:
@@ -42,4 +51,6 @@ jobs:
           template: ${{ inputs.template }}
           overwrite-existing-file: ${{ inputs.overwrite-existing-file }}
           commit-changes: ${{ inputs.commit-changes }}
+          commit-author-name: ${{ inputs.commit-author-name }}
+          commit-author-email: ${{ inputs.commit-author-email }}
 
