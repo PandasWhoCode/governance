@@ -47,7 +47,7 @@ jobs:
       - name: Read All Custom Properties
         uses: PandasWhoCode/read-all-custom-properties@1-create-an-action-to-read-all-custom-properties
         with:
-          token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
+          token: ${{ secrets.GH_CUSTOM_PROPS_TOKEN_WRITABLE }}
           template: ${{ inputs.template }}
           overwrite-existing-file: ${{ inputs.overwrite-existing-file }}
           commit-changes: ${{ inputs.commit-changes }}
