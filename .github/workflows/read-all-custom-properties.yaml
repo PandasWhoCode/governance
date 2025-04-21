@@ -17,7 +17,7 @@ inputs:
     description: 'Commit values read to the repo'
     default: false
     required: false
-BREAK THE WORKFLOW
+
 defaults:
   run:
     shell: bash
