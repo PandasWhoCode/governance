@@ -10,8 +10,8 @@ on:
         default: true
         type: boolean
         required: false
-      commit-changes:
-        description: 'Commit values read to the repo'
+      dry-run-enabled:
+        description: 'Dry run the script'
         default: false
         type: boolean
         required: false
@@ -48,7 +48,7 @@ jobs:
         with:
           token: ${{ secrets.GH_CUSTOM_PROPS_TOKEN_WRITABLE }}
           overwrite-existing-file: ${{ inputs.overwrite-existing-file }}
-          commit-changes: ${{ inputs.commit-changes }}
+          dry-run-enabled: ${{ inputs.dry-run-enabled }}
           commit-author-name: ${{ inputs.commit-author-name }}
           commit-author-email: ${{ inputs.commit-author-email }}
 
