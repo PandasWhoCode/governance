@@ -51,4 +51,6 @@ jobs:
           dry-run-enabled: ${{ inputs.dry-run-enabled }}
           commit-author-name: ${{ inputs.commit-author-name }}
           commit-author-email: ${{ inputs.commit-author-email }}
+          commit-author-gpg-key-contents: ${{ secrets.GPG_KEY_CONTENTS }}
+          commit-author-gpg-key-passphrase: ${{ secrets.GPG_KEY_PASSPHRASE }}
 
