@@ -1,9 +1,11 @@
-name: Update All Repos in Org Custom Properties
+name: Update Custom Properties
 
-description: Updates the repo custom properties as defined in the provided governance repo, repo-properties.yaml file.
+description: 'Updates the custom properties for all repos in an org to values in org/governance/repo-properties.yaml'
 
 on:
   workflow_dispatch:
+#  schedule:
+#    - cron: '0 8 * * *'  # Runs at 08:00 UTC (2 AM CST, 3 AM CDT)
 
 defaults:
   run:
@@ -13,10 +15,14 @@ jobs:
   update-properties:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout Code
         id: checkout_code
         uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
           fetch-depth: "0"
           ref: ${{ github.ref_name }}
+
+      - name: Update Custom Properties
+        uses: PandasWhoCode/update-custom-properties@737ea64a01c876a18b15748803109753b81a0587 # v0.1.0
+        with:
+          token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}

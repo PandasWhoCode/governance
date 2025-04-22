@@ -1,4 +1,9 @@
+# Place this file in the governance repo at the root level to run on the whole organization
 org: PandasWhoCode
+teams:
+  - pandas
+  - reviewers
+  - admins
 repositories:
   - name: gh-audit-setup
     bool_test: ""
