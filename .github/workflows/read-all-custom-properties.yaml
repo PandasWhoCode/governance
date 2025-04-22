@@ -27,7 +27,7 @@ on:
 permissions:
   contents: write
   id-token: write
-break script
+
 defaults:
   run:
     shell: bash
