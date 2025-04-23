@@ -44,7 +44,7 @@ jobs:
           ref: ${{ github.ref_name }}
 
       - name: Read All Custom Properties
-        uses: PandasWhoCode/read-all-custom-properties@1-create-an-action-to-read-all-custom-properties
+        uses: PandasWhoCode/read-all-custom-properties@2009314e217eeae8ce34792846524dfa79146e9c # v0.1.0
         with:
           token: ${{ secrets.GH_CUSTOM_PROPS_TOKEN_WRITABLE }}
           overwrite-existing-file: ${{ inputs.overwrite-existing-file }}
