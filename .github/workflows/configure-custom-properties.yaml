@@ -31,7 +31,7 @@ jobs:
       - name: Verify setup
         env:
           GH_TOKEN: ${{ secrets.GH_CUSTOM_PROPS_TOKEN_WRITABLE }}
-          FILE_NAME: ${{ github.workspace }}/properties_schema.json
+          FILE_NAME: .github/properties_schema.json
         run: |
           if [[ -z "${GH_TOKEN}" ]]; then
             echo "Error: GH_TOKEN is not set."
@@ -53,5 +53,5 @@ jobs:
         uses: PandasWhoCode/configure-custom-properties@fc45d3c37978ecb027380503d3aa5ac3681cd27e # v1.0.2
         with:
           token: ${{ secrets.GH_CUSTOM_PROPS_TOKEN_WRITABLE }}
-          config-file: ${{ github.workspace }}/properties_schema.json
+          config-file: .github/properties_schema.json
           organization: ${{ github.repository_owner }}
