@@ -25,4 +25,4 @@ jobs:
       - name: Update Custom Properties
         uses: PandasWhoCode/update-custom-properties@3d6c163be54c0713af8ee6eea56caa8b59cdc667 # v1.0.0
         with:
-          token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN }}
+          token: ${{ secrets.GH_CUSTOM_PROPERTIES_TOKEN_WRITABLE_REPO }}
