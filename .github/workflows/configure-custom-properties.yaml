@@ -50,7 +50,7 @@ jobs:
 
       - name: Set Organization Custom Properties
         id: set_custom_properties
-        uses: PandasWhoCode/configure-custom-properties@fc45d3c37978ecb027380503d3aa5ac3681cd27e # v1.0.2
+        uses: PandasWhoCode/configure-custom-properties@6e203ca4efcf7d54502be69ca3b458c0355a57ac # v1.0.3
         with:
           token: ${{ secrets.GH_CUSTOM_PROPS_TOKEN_WRITABLE }}
           config-file: .github/properties_schema.json
