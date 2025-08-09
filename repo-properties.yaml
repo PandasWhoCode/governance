@@ -120,3 +120,14 @@ repositories:
     last-security-review-by-team: ""
     last-security-review-date: ""
     test_multi: ""
+  - name: rootly-incident-action
+    bool_test: ""
+    initial-ci-review-by-team: ""
+    initial-ci-review-date: ""
+    initial-security-review-by-team: ""
+    initial-security-review-date: ""
+    last-date-modified: ""
+    last-security-review-by-team: ""
+    last-security-review-date: ""
+    test_multi: ""
+
